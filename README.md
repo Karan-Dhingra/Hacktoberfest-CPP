@@ -1,3 +1,3 @@
 # Hacktoberfest-CPP
 
-This is open repository for all here you can add your Favouraite Programs.
+This is an open repository for all here you can add your Favorite Programs.
