@@ -27,7 +27,7 @@ int main() {
   for (int i = 0; i < m; i++) {
     cin >> arr[i];
   }
-  //taking input number to be  search.
+  //taking input number for  searching.
   cout << "Please enter an element to search" << endl;
   int num;
   cin >> num;
