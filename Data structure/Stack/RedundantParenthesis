@@ -1,0 +1,62 @@
+
+#include<iostream>
+#include<algorithm>
+#include<climits>
+#include<string>
+#include<cstring>
+#include<sstream>
+#include<vector>
+#include<unordered_set>
+#include<unordered_map>
+#include<queue>
+#include<stack>
+using namespace std;
+
+bool redundantParenthesis(string s)
+{
+	stack<char> stack;
+	bool contains_op=false;
+	for(char ch:s)
+	{
+		if(ch!=')')
+		{
+			stack.push(ch);
+		}
+		else
+
+		{
+
+			while(!stack.empty() and stack.top()!='(')
+			{
+				if(stack.top()=='+' or stack.top()=='+' or stack.top()=='-' or stack.top()=='/' or stack.top()=='*' )
+				{
+					contains_op=true;
+				}
+				stack.pop();
+			}
+			stack.pop();
+			if(contains_op==false)
+			{
+				return true;
+			}
+			contains_op=false;
+		}
+	}
+
+	return false;
+}
+
+int main()
+{
+	string s="((a+b)+(d*e))+(a+b)";
+
+	if(redundantParenthesis(s))
+		{
+			cout<<"truee";
+		}
+	else
+	{
+		cout<<"false";
+	}
+	return 0;
+}
