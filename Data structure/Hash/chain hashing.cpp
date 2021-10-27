@@ -1,3 +1,4 @@
+//help me to get hacktober fest thanku :) <3
 //this code was done by BharaniSri10
 #include<stdio.h>
 #include<stdlib.h>
